@@ -32,6 +32,7 @@ body{
     padding: var(--padding-container);
 }
 
+/*Elemento Nav*/
 .nav{
     display: flex;
     align-items: center;
@@ -59,4 +60,70 @@ body{
     text-decoration: none;
     color: var(--Desaturated-Blue);
     font-family: var(--font2);
+}
+
+/*Elemento Hero*/
+
+.hero{
+ position: relative;
+ --padding-container: 90px 0 170px;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+   
+    background-image: url(/images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    bottom: 0;
+
+}
+.hero__img{
+    width: 100%;
+    display: block;
+   
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hero__info{
+   
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+
+.hero__title{
+    font-size: 1.7rem; 
+    font-family: var(--font2);
+    margin-top: 1.8em;
+
+}
+
+.hero__paragraph{
+  
+    line-height: 1.5em;
+    margin: 1.5em 0;
+}
+
+.hero__input{
+    width: 100%;
+    height: 45px;
+
+    font: inherit;
+    border-radius: 6px;
+    border: 1px solid var(--Very-Dark-Blue);
+    padding: 0 20px;
+    font-family: var(--font2);
+}
+
+.hero__input--cta{
+    background-color: var(--Bright-Blue);
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    margin-top: 1.2em;
 }
